@@ -1,7 +1,7 @@
 from functools import reduce
 
 
-def reduce_fun(prev, tec):
+def reduce_speed(prev, tec):
     if tec[0] > prev[0]:
         print(tec[0], ' '.join(tec[1]))
         return tec
@@ -16,4 +16,4 @@ for line in f.readlines():
     array.append([int(count), post])
 
 print(array[0][0], ' '.join(array[0][1]))
-reduce(reduce_fun, array)
+reduce(reduce_speed, array)
